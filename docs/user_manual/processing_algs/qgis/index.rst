@@ -12,27 +12,28 @@ This provider incorporates some algorithms from plugins and also adds its own
 algorithms.
 
 .. toctree::
-     :maxdepth: 2
+    :maxdepth: 2
 
-     cartography
-     database
-     filetools
-     gps
-     interpolation
-     layertools
-     mesh
-     modelertools
-     networkanalysis
-     plots
-     rasteranalysis
-     rastercreation
-     rasterterrainanalysis
-     rastertools
-     vectoranalysis
-     vectorcreation
-     vectorgeneral
-     vectorgeometry
-     vectoroverlay
-     vectorselection
-     vectortable
-     vectortiles
+    algs_cartography/index
+    cartography
+    database
+    filetools
+    gps
+    interpolation
+    layertools
+    mesh
+    modelertools
+    networkanalysis
+    plots
+    rasteranalysis
+    rastercreation
+    rasterterrainanalysis
+    rastertools
+    vectoranalysis
+    vectorcreation
+    vectorgeneral
+    vectorgeometry
+    vectoroverlay
+    vectorselection
+    vectortable
+    vectortiles
