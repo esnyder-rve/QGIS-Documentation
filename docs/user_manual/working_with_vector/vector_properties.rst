@@ -831,7 +831,7 @@ From the main dialog, you can:
    in the layer (single, categorized, rule-based...)
 #. Press the :guilabel:`Renderer Settings...` button to configure features' symbology
    as usual. Note that this symbology is only visible on features that are not clustered,
-   the :guilabel:`Cluster symbol` being applied otherwise. 
+   the :guilabel:`Cluster symbol` being applied otherwise.
    Also, when all the point features in a cluster belong to the same rendering class,
    and thus would be applied the same color, that color represents the ``@cluster_color``
    variable of the cluster.
@@ -853,7 +853,7 @@ From the main dialog, you can:
  Use instead the Processing :ref:`qgiskmeansclustering` or
  :ref:`qgisdbscanclustering` algorithm if you want to create cluster-based
  features.
- 
+
 .. index:: Classes
    single: Symbology; Merged Features renderer
 .. _merged_renderer:
@@ -862,8 +862,8 @@ Merged Features Renderer
 ........................
 
 The |mergedFeatures| :guilabel:`Merged Features` renderer allows area and line
-features to be “dissolved” into a single object prior to rendering to ensure that 
-complex symbols or overlapping features are represented by a uniform and 
+features to be “dissolved” into a single object prior to rendering to ensure that
+complex symbols or overlapping features are represented by a uniform and
 contiguous cartographic symbol.
 
 .. index::
@@ -955,7 +955,7 @@ units).
 Embedded Renderer
 ....................
 
-The :guilabel:`Embedded Symbols` renderer allows to display the 'native' 
+The :guilabel:`Embedded Symbols` renderer allows to display the 'native'
 symbology of a provided datasource. This is mostly the case with :file:`KML`
 and :file:`TAB` datasets that have predefined symbology.
 
@@ -1305,7 +1305,7 @@ labels based on expressions - See :ref:`labeling_with_expressions`.
 .. note::
 
    Labels with their formatting can be displayed as entries in the legends,
-   if enabled in the :ref:`Legend <vectorlegendmenu>` tab. 
+   if enabled in the :ref:`Legend <vectorlegendmenu>` tab.
 
 Below are displayed options to customize the labels, under various tabs:
 
@@ -2228,11 +2228,31 @@ directly linked to a particular field (like the HTML/QML widgets or the
    and you can drag and drop them as with the other fields.
    The associated action will be embedded at the chosen place
    in the current layer's form.
+#. Further customize the form by adding one or more widgets from :guilabel:`Other Widgets` (see :ref:`Other Widgets <other_widgets>`)
 #. Apply the layer's properties dialog
 #. Open a feature attribute form (eg, using the |identify| :sup:`Identify features`
    tool) and it should display the new form.
 
+.. _other_widgets:
 
+Other Widgets
+^^^^^^^^^^^^^
+
+The drag and drop designer offers a number of widgets that are not connected to a particular field, they can
+be used to enhance the appearance of the form or to display dynamically calculated values.
+
+* ``HTML Widget``: embeds an HTML page, the HTML source may contain the result of dynamically calculated expressions.
+* ``QML Widget``: embeds a QML page, the QML source may contain the result of dynamically calculated expressions.
+* ``Text Widget``: displays a text widget which supports basic HTML markup and may contain the result of dynamically calculated expressions.
+* ``Spacer Widget``: inserts an empty transparent rectangle, increasing the vertical distance between two widgets.
+
+
+.. tip:: **Display Dynamic Content**
+
+   The widgets mentioned above (except the Spacer Widget) support expressions that can be used to display
+   content that dynamically changes whenever another field in the form changes.
+   This can be achieved using the ``current_value('field_name')`` function in the expression to examine
+   the value of another field.
 
 .. _provide_ui_file:
 
@@ -2330,6 +2350,8 @@ General options
 * |checkbox| :guilabel:`Editable`: uncheck this option to set the field read-only
   (not manually modifiable) even when the layer is in edit mode. Note that
   checking this setting doesn't override any edit limitation from the provider.
+  This option can be controlled by a data-defined property thanks to the
+  |dataDefine| :sup:`Data-defined override` button.
 * |checkbox| :guilabel:`Reuse last entered value`: remembers the last value
   entered in this field and uses it as default for the next feature being edited
   in the layer.
@@ -2934,15 +2956,12 @@ where ``QGIS`` is the search term. Armed with this information, we can proceed:
    from the pop-up menu.
 #. Click on the :guilabel:`Actions` tab.
 #. Click |symbologyAdd| :sup:`Add a new action`.
-#. Choose the :guilabel:`Open` action type,
+#. Choose the :guilabel:`Open URL` action type,
 #. Enter a name for the action, for example ``Google Search``.
 #. Additionally you can add a :guilabel:`Short Name` or even an :guilabel:`Icon`.
 #. Choose the action :guilabel:`Scope`. See :ref:`adding_actions` for further
    information. Leave the default settings for this example.
-#. For the action, we need to provide the name of the external program to run.
-   In this case, we can use Firefox. If the program is not in your path, you
-   need to provide the full path.
-#. Following the name of the external application, add the URL used for doing
+#. For the action, add the URL used for doing
    a Google search, up to but not including the search term:
    ``https://www.google.com/search?q=``
 #. The text in the :guilabel:`Action` field should now look like this:
@@ -2980,7 +2999,7 @@ identify a lake. In the result box you'll now see that our action is visible:
 
    Select feature and choose action
 
-When we click on the action, it brings up Firefox and navigates to the URL
+When we click on the action, it brings up our default browser and navigates to the URL
 https://www.google.com/search?q=Tustumena. It is also possible to add further
 attribute fields to the action. Therefore, you can add a ``+`` to the end of
 the action text, select another field and click on :guilabel:`Insert Field`. In
@@ -3185,8 +3204,8 @@ You can also limit the layer refresh to a specific message set in the |checkbox|
 Use Scale Reference
 -------------------
 
-If set, the reference scale indicates the map scale at which symbology and 
-labeling sizes which uses paper-based units (such as millimeters or points) 
+If set, the reference scale indicates the map scale at which symbology and
+labeling sizes which uses paper-based units (such as millimeters or points)
 relate to. The sizes will be scaled accordingly whenever the map is viewed at
 a different scale.
 
@@ -3400,7 +3419,7 @@ layout legend <layout_legend_item>`. These options include:
   :guilabel:`Layers` panel and the print layout legend.
 * |checkbox| :guilabel:`Show label legend`: Displays overviews of the different
   label settings as entries in the legends.
-  The :ref:`label style <showlabels>` is previewed along with the description. 
+  The :ref:`label style <showlabels>` is previewed along with the description.
 * |checkbox| :guilabel:`Text on symbols`: In some cases it can be useful to add
   extra information to the symbols in the legend. With this frame, you can
   affect to any of the symbols used in the layer symbology a text that is

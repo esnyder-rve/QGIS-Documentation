@@ -57,6 +57,7 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinxext.rediraffe',
     'sphinx_togglebutton',
+    'sphinx_copybutton'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -78,6 +79,9 @@ gettext_compact = False     # optional.
 
 # Enable numeric figure references
 numfig = True
+
+# The filename format for language-specific figures
+figure_language_filename = '{path}{language}/{basename}{ext}'
 
 # -- Options for HTML output -------------------------------------------------
 

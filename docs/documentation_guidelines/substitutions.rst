@@ -90,6 +90,7 @@ Icon                            Substitution                        Icon        
 |addVectorTileLayer|            ``|addVectorTileLayer|``            |addXyzLayer|                   ``|addXyzLayer|``
 |addVirtualLayer|               ``|addVirtualLayer|``               |addWmsLayer|                   ``|addWmsLayer|``
 |addWcsLayer|                   ``|addWcsLayer|``                   |addWfsLayer|                   ``|addWfsLayer|``
+|addPointCloudLayer|            ``|addPointCloudLayer|``            |addGpsLayer|                   ``|addGpsLayer|``
 |newVectorLayer|                ``|newVectorLayer|``                |newSpatiaLiteLayer|            ``|newSpatiaLiteLayer|``
 |newGeoPackageLayer|            ``|newGeoPackageLayer|``            |createMemory|                  ``|createMemory|``
 |newVirtualLayer|               ``|newVirtualLayer|``               |newMeshLayer|                  ``|newMeshLayer|``
@@ -97,6 +98,7 @@ Icon                            Substitution                        Icon        
 |geoPackage|                    ``|geoPackage|``                    |spatialite|                    ``|spatialite|``
 |virtualLayer|                  ``|virtualLayer|``                  |wms|                           ``|wms|``
 |wcs|                           ``|wcs|``                           |wfs|                           ``|wfs|``
+|pointCloudLayer|               ``|pointCloudLayer|``               |gps|                           ``|gps|``
 |dbSchema|                      ``|dbSchema|``
 |inOverview|                    ``|inOverview|``                    |addAllToOverview|              ``|addAllToOverview|``
 |removeAllFromOverview|         ``|removeAllFromOverview|``         |removeLayer|                   ``|removeLayer|``
@@ -240,7 +242,8 @@ Icon                            Substitution                        Icon        
 |selectFreehand|                ``|selectFreehand|``                |selectRadius|                  ``|selectRadius|``
 |selectAll|                     ``|selectAll|``                     |deselectAll|                   ``|deselectAll|``
 |invertSelection|               ``|invertSelection|``               |expressionSelect|              ``|expressionSelect|``
-|deselectActiveLayer|           ``|deselectActiveLayer|``           |selectLocation|                ``|selectLocation|``
+|deselectActiveLayer|           ``|deselectActiveLayer|``
+|selectDistance|                ``|selectDistance|``                |selectLocation|                ``|selectLocation|``
 |selectAllTree|                 ``|selectAllTree|``                 |select|                        ``|select|``
 |selectAdd|                     ``|selectAdd|``                     |selectRemove|                  ``|selectRemove|``
 |formSelect|                    ``|formSelect|``                    |dataDefine|                    ``|dataDefine|``
@@ -408,6 +411,10 @@ Icon                     Substitution                 Icon                     S
 |alignLeft|              ``|alignLeft|``              |alignRight|             ``|alignRight|``
 |alignHCenter|           ``|alignHCenter|``           |alignVCenter|           ``|alignVCenter|``
 |alignTop|               ``|alignTop|``               |alignBottom|            ``|alignBottom|``
+|distributeLeft|         ``|distributeLeft|``         |distributeRight|        ``|distributeRight|``
+|distributeTop|          ``|distributeTop|``          |distributeBottom|       ``|distributeBottom|``
+|distributeHCenter|      ``|distributeHCenter|``      |distributeVCenter|      ``|distributeVCenter|``
+|distributeHSpace|       ``|distributeHSpace|``       |distributeVSpace|       ``|distributeVSpace|``
 |resizeShortest|         ``|resizeShortest|``         |resizeTallest|          ``|resizeTallest|``
 |resizeNarrowest|        ``|resizeNarrowest|``        |resizeWidest|           ``|resizeWidest|``
 |resizeSquare|           ``|resizeSquare|``           |groupItems|             ``|groupItems|``
@@ -558,6 +565,8 @@ Icon                            Substitution                        Icon        
    :width: 1.5em
 .. |addExpression| image:: /static/common/mActionAddExpression.png
    :width: 1.5em
+.. |addGpsLayer| image:: /static/common/mActionAddGpsLayer.png
+   :width: 1.5em
 .. |addGrid| image:: /static/common/add_grid.png
    :width: 1.5em
 .. |addHtml| image:: /static/common/mActionAddHtml.png
@@ -585,6 +594,8 @@ Icon                            Substitution                        Icon        
 .. |addOracleLayer| image:: /static/common/mActionAddOracleLayer.png
    :width: 1.5em
 .. |addPart| image:: /static/common/mActionAddPart.png
+   :width: 1.5em
+.. |addPointCloudLayer| image:: /static/common/mActionAddPointCloudLayer.png
    :width: 1.5em
 .. |addPolygon| image:: /static/common/mActionAddPolygon.png
    :width: 1.5em
@@ -786,6 +797,22 @@ Icon                            Substitution                        Icon        
    :width: 1.5em
 .. |dissolve| image:: /static/common/mAlgorithmDissolve.png
    :width: 1.5em
+.. |distributeBottom| image:: /static/common/mActionDistributeBottom.png
+   :width: 1.5em
+.. |distributeHCenter| image:: /static/common/mActionDistributeHCenter.png
+   :width: 1.5em
+.. |distributeHSpace| image:: /static/common/mActionDistributeHSpace.png
+   :width: 1.5em
+.. |distributeLeft| image:: /static/common/mActionDistributeLeft.png
+   :width: 1.5em
+.. |distributeRight| image:: /static/common/mActionDistributeRight.png
+   :width: 1.5em
+.. |distributeTop| image:: /static/common/mActionDistributeTop.png
+   :width: 1.5em
+.. |distributeVCenter| image:: /static/common/mActionDistributeVCenter.png
+   :width: 1.5em
+.. |distributeVSpace| image:: /static/common/mActionDistributeVSpace.png
+   :width: 1.5em
 .. |dock| image:: /static/common/dock.png
    :width: 1.5em
 .. |duplicateFeature| image:: /static/common/mActionDuplicateFeature.png
@@ -883,6 +910,8 @@ Icon                            Substitution                        Icon        
 .. |geometryChecker| image:: /static/common/geometrychecker.png
    :width: 1.5em
 .. |georefRun| image:: /static/common/mGeorefRun.png
+   :width: 1.5em
+.. |gps| image:: /static/common/mIconGps.png
    :width: 1.5em
 .. |gpsImporter| image:: /static/common/gps_importer.png
    :width: 1.5em
@@ -1195,6 +1224,8 @@ Icon                            Substitution                        Icon        
    :width: 1.5em
 .. |pointCloudExtent| image:: /static/common/pointCloudExtent.png
    :width: 1.5em
+.. |pointCloudLayer| image:: /static/common/mIconPointCloudLayer.png
+   :width: 1.5em
 .. |pointClusterSymbol| image:: /static/common/rendererPointClusterSymbol.png
    :width: 1.5em
 .. |pointDisplacementSymbol| image:: /static/common/rendererPointDisplacementSymbol.png
@@ -1315,6 +1346,8 @@ Icon                            Substitution                        Icon        
    :width: 1.5em
 .. |selectColor| image:: /static/common/selectcolor.png
 .. |selectColorRamp| image:: /static/common/selectcolorramp.png
+.. |selectDistance| image:: /static/common/mAlgorithmSelectDistance.png
+   :width: 1.5em
 .. |selectFreehand| image:: /static/common/mActionSelectFreehand.png
    :width: 1.5em
 .. |selectLocation| image:: /static/common/mAlgorithmSelectLocation.png

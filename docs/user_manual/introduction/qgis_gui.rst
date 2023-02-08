@@ -90,10 +90,9 @@ The :menuselection:`Project` menu provides access and exit points for
   :ref:`print layout <label_printlayout>` for more complex output
 * Set project properties and snapping options for geometry editing.
 
-.. list-table::
+.. list-table:: The Project menu items
    :header-rows: 1
    :widths: 40 20 10 30
-   :stub-columns: 0
 
    * - Menu Option
      - Shortcut
@@ -114,7 +113,7 @@ The :menuselection:`Project` menu provides access and exit points for
    * - :menuselection:`Open from -->`
      -
      -
-     -
+     - :ref:`sec_projects`
    * - :menuselection:`--> GeoPackage...`
      -
      -
@@ -142,7 +141,7 @@ The :menuselection:`Project` menu provides access and exit points for
    * - :menuselection:`Save to -->`
      -
      -
-     -
+     - :ref:`sec_projects`
    * - :menuselection:`--> Templates...`
      -
      -
@@ -225,10 +224,9 @@ The :menuselection:`Edit` menu provides most of the native tools needed
 to edit layer attributes or geometry (see :ref:`editingvector` for
 details).
 
-.. list-table::
+.. list-table:: The Edit menu items
    :header-rows: 1
    :widths: 45 18 13 24
-   :stub-columns: 0
 
    * - Menu Option
      - Shortcut
@@ -589,7 +587,7 @@ details).
 Tools that depend on the selected layer geometry type i.e. point,
 polyline or polygon, are activated accordingly:
 
-.. list-table::
+.. list-table:: The "Move feature" geometry based icons
    :header-rows: 1
    :widths: 40 15 15 15
 
@@ -613,8 +611,7 @@ View
 ----
 
 The map is rendered in map views. You can interact with these
-views using the :menuselection:`View` tools (see :ref:`working_canvas`
-for more information). For example, you can:
+views using the :menuselection:`View` tools. For example, you can:
 
 * Create new 2D or 3D map views next to the main map canvas
 * :ref:`Zoom or pan <zoom_pan>` to any place
@@ -636,10 +633,9 @@ actions like:
   option, it makes your screen display only the map
 
 
-.. list-table::
+.. list-table:: The View menu items
    :header-rows: 1
    :widths: 42 22 12 24
-   :stub-columns: 0
 
    * - Menu Option
      - Shortcut
@@ -647,7 +643,7 @@ actions like:
      - Reference
    * - |newMap| :guilabel:`New Map View`
      - :kbd:`Ctrl+M`
-     -
+     - :guilabel:`Map Navigation`
      - :ref:`label_mapview`
    * - :menuselection:`3D Map Views -->`
      -
@@ -655,7 +651,7 @@ actions like:
      - :ref:`label_3dmapview`
    * - :menuselection:`-->` |new3DMap| :guilabel:`New 3D Map View`
      - :kbd:`Ctrl+Alt+M`
-     -
+     - :guilabel:`Map Navigation`
      - :ref:`label_3dmapview`
    * - :menuselection:`--> Manage 3D Map Views`
      -
@@ -668,7 +664,7 @@ actions like:
    * - |panToSelected| :guilabel:`Pan Map to Selection`
      -
      - :guilabel:`Map Navigation`
-     -
+     - :ref:`zoom_pan`
    * - |zoomIn| :guilabel:`Zoom In`
      - :kbd:`Ctrl+Alt++`
      - :guilabel:`Map Navigation`
@@ -704,6 +700,10 @@ actions like:
      -
      - :guilabel:`Attributes`
      - :ref:`statistical_summary`
+   * - |layoutItem3DMap| :guilabel:`Elevation Profile`
+     -
+     -
+     -
    * - |zoomFullExtent| :guilabel:`Zoom Full`
      - :kbd:`Ctrl+Shift+F`
      - :guilabel:`Map Navigation`
@@ -756,7 +756,7 @@ actions like:
        :guilabel:`Title Label...`
      -
      -
-     - :ref:`title_label_decoration`
+     - :ref:`titlelabel_decoration`
    * - :menuselection:`-->` |copyrightLabel|
        :guilabel:`Copyright Label...`
      -
@@ -855,170 +855,10 @@ actions like:
      -
      -
      - :ref:`sec_panels_and_toolbars`
-   * - :menuselection:`--> Advanced Digitizing`
-     -
-     -
-     - :ref:`advanced_digitizing_panel`
-   * - :menuselection:`--> Browser`
-     -
-     -
-     - :ref:`browser_panel`
-   * - :menuselection:`--> Browser (2)`
-     -
-     -
-     - :ref:`browser_panel`
-   * - :menuselection:`--> Debugging/Development Tools`
-     - :kbd:`F12`
-     -
-     - :ref:`debug_dev_tools`
-   * - :menuselection:`--> Geometry Validation`
-     -
-     -
-     - :ref:`digitizingmenu`
-   * - :menuselection:`--> GPS Information`
-     -
-     -
-     - :ref:`sec_gpstracking`
-   * - :menuselection:`--> GRASS Tools`
-     -
-     -
-     - :ref:`sec_grass`
-   * - :menuselection:`--> Layer Order`
-     -
-     -
-     - :ref:`layer_order`
-   * - :menuselection:`--> Layer Styling`
-     -
-     -
-     - :ref:`layer_styling_panel`
-   * - :menuselection:`--> Layers`
-     -
-     -
-     - :ref:`label_legend`
-   * - :menuselection:`--> Log Messages`
-     -
-     -
-     - :ref:`log_message_panel`
-   * - :menuselection:`--> Overview`
-     -
-     -
-     - :ref:`overview_panels`
-   * - :menuselection:`--> Processing Toolbox`
-     -
-     -
-     - :ref:`processing.toolbox`
-   * - :menuselection:`--> Results Viewer`
-     -
-     -
-     - :ref:`processing.toolbox`
-   * - :menuselection:`--> Snapping and Digitizing Options`
-     -
-     -
-     - :ref:`snapping_tolerance`
-   * - :menuselection:`--> Spatial Bookmark Manager`
-     -
-     -
-     - :ref:`sec_bookmarks`
-   * - :menuselection:`--> Statistics`
-     -
-     -
-     - :ref:`statistical_summary`
-   * - :menuselection:`--> Temporal Controller`
-     -
-     -
-     - :ref:`temporal_controller`
-   * - :menuselection:`--> Tile Scale`
-     -
-     -
-     - :ref:`tilesets`
-   * - :menuselection:`--> Undo/Redo`
-     -
-     -
-     - :ref:`undo_redo_panel`
    * - :menuselection:`Toolbars -->`
      -
      -
      - :ref:`sec_panels_and_toolbars`
-   * - :menuselection:`--> Advanced Digitizing Toolbar`
-     -
-     -
-     - :ref:`sec_advanced_edit`
-   * - :menuselection:`--> Annotations Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Attributes Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Data Source Manager Toolbar`
-     -
-     -
-     - :ref:`manage_data_source`
-   * - :menuselection:`--> Database Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Digitizing Toolbar`
-     -
-     -
-     - :ref:`sec_edit_existing_layer`
-   * - :menuselection:`--> Help Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Label Toolbar`
-     -
-     -
-     - :ref:`label_toolbar`
-   * - :menuselection:`--> Manage Layers Toolbar`
-     -
-     -
-     - :ref:`manage_data_source`
-   * - :menuselection:`--> Map Navigation Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Mesh Digitizing Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Plugins Toolbar`
-     -
-     -
-     - :ref:`plugins.index`
-   * - :menuselection:`--> Project Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Raster Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Selection Toolbar`
-     -
-     -
-     - :ref:`sec_selection`
-   * - :menuselection:`--> Shape Digitizing Toolbar`
-     -
-     -
-     - :ref:`shape_edit`
-   * - :menuselection:`--> Snapping Toolbar`
-     -
-     -
-     - :ref:`snapping_tolerance`
-   * - :menuselection:`--> Vector Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> Web Toolbar`
-     -
-     -
-     -
-   * - :menuselection:`--> GRASS`
-     -
-     -
-     - :ref:`sec_grass`
    * - :guilabel:`Toggle Full Screen Mode`
      - :kbd:`F11`
      -
@@ -1060,10 +900,9 @@ The :menuselection:`Layer` menu also contains tools to configure,
 copy or paste layer properties (style, scale, CRS...).
 
 
-.. list-table::
+.. list-table:: The Layer menu items
    :header-rows: 1
    :widths: 37 18 18 27
-   :stub-columns: 0
 
    * - Menu Option
      - Shortcut
@@ -1191,6 +1030,16 @@ copy or paste layer properties (style, scale, CRS...).
      -
      -
      - :ref:`vector_tiles`
+   * - :menuselection:`-->` |addPointCloudLayer|
+       :guilabel:`Add Point Cloud Layer...`
+     -
+     -
+     - :ref:`working_with_point_clouds`
+   * - :menuselection:`-->` |addGpsLayer|
+       :guilabel:`Add GPX Layer...`
+     -
+     -
+     - :ref:`gps_data`
    * - :guilabel:`Embed Layers and Groups...`
      -
      -
@@ -1294,7 +1143,7 @@ copy or paste layer properties (style, scale, CRS...).
    * - :guilabel:`Set Scale Visibility of Layer(s)`
      -
      -
-     -
+     - :ref:`label_scaledepend`
    * - :guilabel:`Set CRS of Layer(s)`
      - :kbd:`Ctrl+Shift+C`
      -
@@ -1308,7 +1157,9 @@ copy or paste layer properties (style, scale, CRS...).
      -
      - :ref:`vector_properties_dialog`,
        :ref:`raster_properties_dialog`,
-       :ref:`label_meshproperties`
+       :ref:`label_meshproperties`,
+       :ref:`point_clouds_properties`,
+       :ref:`vectortiles_properties`
    * - :guilabel:`Filter...`
      - :kbd:`Ctrl+F`
      -
@@ -1334,7 +1185,7 @@ copy or paste layer properties (style, scale, CRS...).
 Settings
 --------
 
-.. list-table::
+.. list-table:: The Settings menu items
    :header-rows: 1
    :widths: 50 50
 
@@ -1368,7 +1219,7 @@ Under |kde| Linux KDE, you'll find more tools in the
 Plugins
 -------
 
-.. list-table::
+.. list-table:: The Plugins menu items
    :header-rows: 1
    :widths: 36 17 17 30
 
@@ -1395,10 +1246,9 @@ Vector
 This is what the :guilabel:`Vector` menu looks like if all core plugins
 are enabled.
 
-.. list-table::
+.. list-table:: The Vector menu items
    :header-rows: 1
    :widths: 40 15 10 35
-   :stub-columns: 0
 
    * - Menu Option
      - Shortcut
@@ -1408,10 +1258,6 @@ are enabled.
      -
      -
      - :ref:`geometry_checker`
-   * - |gpsImporter| :guilabel:`GPS Tools`
-     - :kbd:`Alt+O` + :kbd:`G`
-     - :guilabel:`Vector`
-     - :ref:`plugin_gps`
    * - |topologyChecker| :guilabel:`Topology Checker`
      -
      - :guilabel:`Vector`
@@ -1576,6 +1422,10 @@ are enabled.
      -
      -
      - :ref:`qgisselectbylocation`
+   * - :menuselection:`--> Select Within Distance...`
+     -
+     -
+     - :ref:`qgisselectwithindistance`
    * - :menuselection:`--> Extract Layer Extent...`
      -
      -
@@ -1625,7 +1475,7 @@ This is what the :guilabel:`Raster` menu looks like if all core plugins
 are enabled.
 
 
-.. list-table::
+.. list-table:: The Raster menu items
    :header-rows: 1
    :widths: 40 15 8 38
 
@@ -1800,7 +1650,7 @@ plugins are enabled.
 If no database plugins are enabled, there will be no
 :guilabel:`Database` menu.
 
-.. list-table::
+.. list-table:: The Database menu items
    :header-rows: 1
    :widths: 40 15 15 30
 
@@ -1838,7 +1688,7 @@ This is what the :guilabel:`Web` menu looks like if all the core
 plugins are enabled.
 If no web plugins are enabled, there will be no :guilabel:`Web` menu.
 
-.. list-table::
+.. list-table:: The Web menu items
    :header-rows: 1
    :widths: 30 15 15 40
 
@@ -1871,7 +1721,7 @@ The :menuselection:`Mesh` menu provides tools needed to manipulate
 :ref:`mesh layers <label_meshdata>`.
 Third-party plugins can add items to this menu.
 
-.. list-table::
+.. list-table::  The Mesh menu items
    :header-rows: 1
    :widths: 40 15 15 30
    :stub-columns: 0
@@ -1893,7 +1743,7 @@ Third-party plugins can add items to this menu.
 Processing
 ----------
 
-.. list-table::
+.. list-table:: The Processing menu items
    :header-rows: 1
    :widths: 30 20 10 40
 
@@ -1927,7 +1777,7 @@ When starting QGIS for the first time not all core plugins are loaded.
 Help
 ----
 
-.. list-table::
+.. list-table:: The Help menu items
    :header-rows: 1
    :widths: 40 15 15 30
 
@@ -1979,7 +1829,7 @@ QGIS
 This menu is only available under |osx| macOS and contains some OS
 related commands.
 
-.. csv-table::
+.. csv-table::  The QGIS menu items
    :header: "Menu Option", "Shortcut"
    :widths: auto
 
@@ -1991,11 +1841,10 @@ related commands.
    ":guilabel:`Quit QGIS`", ":kbd:`Cmd+Q`"
 
 
-:guilabel:`Preferences` correspond to
-:menuselection:`Settings --> Options`, :guilabel:`About QGIS`
-corresponds to :menuselection:`Help --> About` and
-:guilabel:`Quit QGIS` corresponds to
-:menuselection:`Project --> Exit QGIS` for other platforms.
+:guilabel:`Preferences` corresponds to :menuselection:`Settings --> Options`,
+:guilabel:`About QGIS` corresponds to :menuselection:`Help --> About`
+and :guilabel:`Quit QGIS` corresponds to :menuselection:`Project --> Exit QGIS`
+for other platforms.
 
 
 .. _sec_panels_and_toolbars:
@@ -2003,10 +1852,9 @@ corresponds to :menuselection:`Help --> About` and
 Panels and Toolbars
 ===================
 
-From the :menuselection:`View` menu (or |kde|
-:menuselection:`Settings`), you can switch QGIS widgets
-(:menuselection:`Panels -->`) and toolbars
-(:menuselection:`Toolbars -->`) on and off.
+From the :menuselection:`View` menu (or |kde| :menuselection:`Settings`),
+you can switch QGIS widgets (:menuselection:`Panels -->`)
+and toolbars (:menuselection:`Toolbars -->`) on and off.
 To (de)activate any of them, right-click the menu bar or toolbar and
 choose the item you want.
 Panels and toolbars can be moved and placed wherever you like within
@@ -2034,20 +1882,21 @@ context menu, or by holding the mouse over the toolbars.
 Available toolbars are:
 
 .. csv-table:: QGIS Toolbars
-   :header: "Name", "Main Reference for tools"
+   :header: "Toolbar name", "Main Reference for tools"
    :widths: auto
 
-   ":guilabel:`Advanced Digitizing Toolbar`", ":ref:`sec_advanced_edit`"
-   ":guilabel:`Annotations Toolbar`"
+   ":guilabel:`Advanced Digitizing`", ":ref:`sec_advanced_edit`"
+   ":guilabel:`Annotations`", ":ref:`sec_annotations`"
    ":guilabel:`Attributes`", ":ref:`sec_attribute_table`, :ref:`general_tools`"
    ":guilabel:`Data Source Manager`", ":ref:`manage_data_source`"
    ":guilabel:`Database`", ":ref:`dbmanager`"
    ":guilabel:`Digitizing`", ":ref:`sec_edit_existing_layer`"
+   ":guilabel:`GRASS`", ":ref:`sec_grass`"
    ":guilabel:`Help`"
    ":guilabel:`Label`", ":ref:`label_toolbar`"
    ":guilabel:`Manage Layers`", ":ref:`opening_data`"
-   ":guilabel:`Map Navigation`", ":ref:`working_canvas`"
-   ":guilabel:`Mesh Digitizing Toolbar`"
+   ":guilabel:`Map Navigation`", ":ref:`zoom_pan`"
+   ":guilabel:`Mesh Digitizing`", ":ref:`editing_mesh`"
    ":guilabel:`Plugins`", ":ref:`plugins.index`"
    ":guilabel:`Project`", ":ref:`project_files`, :ref:`label_printlayout`, :ref:`vector_symbol_library`"
    ":guilabel:`Processing Algorithms`", ":ref:`processing.options`"
@@ -2067,8 +1916,8 @@ Available toolbars are:
 .. tip:: **Restoring toolbars**
 
    If you have accidentally hidden a toolbar, you can get it
-   back using :menuselection:`View --> Toolbars -->` (or |kde|
-   :menuselection:`Settings --> Toolbars -->`).
+   back using :menuselection:`View --> Toolbars -->`
+   (or |kde| :menuselection:`Settings --> Toolbars -->`).
    If, for some reason, a toolbar (or any other widget) totally
    disappears from the interface, you'll find tips to get it back at
    :ref:`restoring initial GUI <tip_restoring_configuration>`.
@@ -2082,808 +1931,84 @@ Panels
 
 QGIS provides many panels.
 Panels are special widgets that you can interact with (selecting
-options, checking boxes, filling values...) to perform more complex
-tasks.
+options, checking boxes, filling values...) to perform more complex tasks.
 
 Below is a list of the default panels provided by QGIS:
 
-* the :ref:`Advanced Digitizing Panel <advanced_digitizing_panel>`
-* the :ref:`Browser Panel <browser_panel>`
-* the :ref:`Debugging/Development Tools <debug_dev_tools>`
-* the :ref:`Geometry Validation Panel <geometry_validation_panel>`
-* the :ref:`GPS Information Panel <sec_gpstracking>`
-* the :ref:`Identify Panel <identify>`
-* the :ref:`Layer Order Panel <layer_order>`
-* the :ref:`Layer Styling Panel <layer_styling_panel>`
-* the :ref:`Layers Panel <label_legend>`
-* the :ref:`Log Messages Panel <log_message_panel>`
-* the :ref:`Overview Panel <overview_panels>`
-* the :ref:`Processing Toolbox <label_processing>`
-* the :guilabel:`Result Viewer Panel`
-* the :ref:`Spatial Bookmark Manager Panel <sec_bookmarks>`
-* the :ref:`Statistics Panel <statistical_summary>`
-* the :ref:`Temporal Controller <temporal_controller>`
-* the :ref:`Tile Scale Panel <tilesets>`
-* the :ref:`Undo/Redo Panel <undo_redo_panel>`
-* the :ref:`Vertex Editor Panel <vertex_editor_panel>`
-
-
-.. index:: Map view
-.. _`label_mapview`:
-
-Map View
-========
-
-The map view (also called **Map canvas**) is the "business end" of
-QGIS --- maps are displayed in this area, in 2D.
-The map displayed in this window will reflect the rendering (symbology,
-labeling, visibilities...) you applied to the layers you have loaded.
-It also depends on the layers and the project's Coordinate Reference
-System (CRS).
-
-When you add a layer (see e.g. :ref:`opening_data`), QGIS automatically
-looks for its CRS. If a different CRS is set by default for the project
-(see :ref:`project_crs`) then the layer extent is "on-the-fly"
-translated to that CRS, and the map view is zoomed to that extent if
-you start with a blank QGIS project.
-If there are already layers in the project, no map canvas resize is
-performed, so only features falling within the current map canvas extent
-will be visible.
-
-.. index:: Zoom, Pan, Map navigation
-.. _zoom_pan:
-
-
-Exploring the map view
-----------------------
-
-Click on the map view and you should be able to interact with it,
-panning or zooming to different areas of the map.
-Dedicated tools are provided in the :guilabel:`Navigation Toolbar` and
-in the :menuselection:`View` menu, with handful shortcuts from the keyboard
-or the mouse buttons.
-
-
-.. list-table:: Map canvas navigation tools
+.. list-table:: QGIS Panels
    :header-rows: 1
-   :widths: 20 75
-   :class: longtable
+   :widths: auto
+
+   * - Panel name
+     - Shortcut
+     - Reference
+   * - :guilabel:`Advanced Digitizing`
+     - :kbd:`Ctrl+4`
+     - :ref:`advanced_digitizing_panel`
+   * - :guilabel:`Browser`
+     - :kbd:`Ctrl+2`
+     - :ref:`browser_panel`
+   * - :guilabel:`Browser (2)`
+     -
+     - :ref:`browser_panel`
+   * - :guilabel:`Debugging/Development Tools`
+     - :kbd:`F12`
+     - :ref:`debug_dev_tools`
+   * - :guilabel:`Elevation Profile`
+     -
+     -
+   * - :guilabel:`Geometry Validation`
+     -
+     - :ref:`digitizingmenu`
+   * - :guilabel:`GPS Information`
+     - :kbd:`Ctrl+0`
+     - :ref:`sec_gpstracking`
+   * - :guilabel:`GRASS Tools`
+     -
+     - :ref:`sec_grass`
+   * - :guilabel:`Layer Order`
+     - :kbd:`Ctrl+9`
+     - :ref:`layer_order`
+   * - :guilabel:`Layer Styling`
+     - :kbd:`Ctrl+3`
+     - :ref:`layer_styling_panel`
+   * - :guilabel:`Layers`
+     - :kbd:`Ctrl+1`
+     - :ref:`label_legend`
+   * - :guilabel:`Log Messages`
+     -
+     - :ref:`log_message_panel`
+   * - :guilabel:`Overview`
+     - :kbd:`Ctrl+8`
+     - :ref:`overview_panels`
+   * - :guilabel:`Processing Toolbox`
+     -
+     - :ref:`processing.toolbox`
+   * - :guilabel:`Results Viewer`
+     -
+     - :ref:`processing.toolbox`
+   * - :guilabel:`Snapping and Digitizing Options`
+     -
+     - :ref:`snapping_tolerance`
+   * - :guilabel:`Spatial Bookmark Manager`
+     - :kbd:`Ctrl+7`
+     - :ref:`sec_bookmarks`
+   * - :guilabel:`Statistics`
+     - :kbd:`Ctrl+6`
+     - :ref:`statistical_summary`
+   * - :guilabel:`Temporal Controller`
+     -
+     - :ref:`temporal_controller`
+   * - :guilabel:`Tile Scale`
+     -
+     - :ref:`tilesets`
+   * - :guilabel:`Undo/Redo`
+     - :kbd:`Ctrl+5`
+     - :ref:`undo_redo_panel`
+   * - :guilabel:`Vertex Editor`
+     -
+     - :ref:`vertex_editor_panel`
 
-   * - Tool
-     - Usage
-   * - |pan| :sup:`Pan Map`
-     - * Single left click: the map is centered on the clicked point, at the same scale
-       * Hold down the left mouse button and drag the map canvas.
-
-   * - |zoomIn| :sup:`Zoom In`
-     - * Single left click: the map is centered on the clicked point,
-         while the scale gets doubled
-       * Drag a rectangle on the map canvas with the left mouse button
-         to zoom in to an area.
-       * Hold the :kbd:`Alt` key to switch to the |zoomOut| :sup:`Zoom Out` tool.
-
-   * - |zoomOut| :sup:`Zoom Out`
-     - * Single left click: the map is centered on the clicked point,
-         while the scale gets halved
-       * Drag a rectangle on the map canvas with the left mouse button
-         to zoom out from an area.
-       * Hold the :kbd:`Alt` key to switch to the |zoomIn| :sup:`Zoom In` tool.
-
-   * - |panToSelected| :sup:`Pan Map to Selection`
-     - Pan the map to the selected features of all the selected layers in the
-       :guilabel:`Layers` panel.
-   * - |zoomToSelected| :sup:`Zoom To Selection`
-     - Zoom to the selected features of all the selected layers in the
-       :guilabel:`Layers` panel.
-
-       *Also available in the layer contextual menu*
-   * - |zoomToLayer| :sup:`Zoom To Layer(s)`
-     - Zoom to the extent of all the selected layers in the
-       :guilabel:`Layers` panel.
-
-       *Also available in the layer contextual menu*
-   * - |zoomFullExtent| :sup:`Zoom Full`
-     - Zoom to the extent of all the layers in the project
-       or to the :ref:`project full extent <project_full_extent>`.
-   * - |zoomLast| :sup:`Zoom Last`
-     - Zoom the map to the previous extent in history.
-   * - |zoomNext| :sup:`Zoom Next`
-     - Zoom the map to the next extent in history.
-   * - |zoomActual| :sup:`Zoom to Native Resolution`
-     - Zoom the map to a level where one pixel of the active raster layer covers
-       one screen pixel.
-
-       *Also available in the layer contextual menu*
-   * - Mouse wheel
-     - * Pan map: Hold and drag the mouse wheel.
-       * Zoom: Roll the mouse wheel to zoom in or zoom out.
-         With :kbd:`Ctrl` key pressed while rolling the mouse wheel
-         results in a finer zoom.
-       * Press the back or forward button to browse the map canvas zoom history.
-   * - Keyboard
-     - * Pan map: Hold down the :kbd:`Space` key and move the mouse.
-         Press the arrow keys to pan up, down, left and right.
-       * Zoom in: Press :kbd:`PgUp` or :kbd:`Ctrl++`
-       * Zoom out: Press :kbd:`PgDown` or :kbd:`Ctrl+-`
-       * Zoom to area: When certain map tools are active (Identify, Measure...),
-         hold down :kbd:`Shift` and drag a rectangle on the map to zoom to that
-         area. Not compatible with active selection or edit tools.
-
-
-Right-click over the map and you should be able to |editCopy|
-:guilabel:`Copy coordinates` of the clicked point in the map CRS, in WGS84
-or in a custom CRS. The copied information can then be pasted in an expression,
-a script, text editor or spreadsheet...
-
-By default, QGIS opens a single map view (called "main map"), which is
-tightly bound to the :guilabel:`Layers` panel; the main map *automatically*
-reflects the changes you do in the :guilabel:`Layers` panel area.
-But it is also possible to open additional map views whose content could diverge
-from the :guilabel:`Layers` panel current state. They can be of 2D or :ref:`3D
-<label_3dmapview>` type, show different scale or extent, or display a different
-set of the loaded layers thanks to :ref:`map themes <map_themes>`.
-
-
-.. _additional_map_views:
-
-Setting additional map views
-----------------------------
-
-To add a new map view, go to :menuselection:`View -->` |newMap|
-:menuselection:`New Map View`. A new floating widget, mimicking the main map
-view's rendering, is added to QGIS. You can add as many map views as you need.
-They can be kept floating, placed side by side or stacked on top of each
-other.
-
-.. _figure_mapviews:
-
-.. figure:: img/map_views.png
-   :align: center
-   :width: 100%
-
-   Multiple map views with different settings
-
-At the top of an additional map canvas, there's a toolbar with the following
-capabilities:
-
-* |zoomFullExtent| :sup:`Zoom Full`, |zoomToSelected| :sup:`Zoom to Selection`
-  and |zoomToLayer| :sup:`Zoom to Layer(s)` to navigate within the view
-* |showPresets| :sup:`Set View Theme` to select the :ref:`map theme <map_themes>`
-  to display in the map view. If set to ``(none)``, the view will follow
-  the :guilabel:`Layers` panel changes.
-* |options| :sup:`View settings` to configure the map view:
-
-  * |radioButtonOn| :guilabel:`Synchronize view center with main map`:
-    syncs the center of the map views without changing the scale.
-    This allows you to have an overview style or magnified map which follows
-    the main canvas center.
-  * |radioButtonOff| :guilabel:`Synchronize view to selection`: same as
-    zoom to selection
-  * :guilabel:`Scale`
-  * :guilabel:`Rotation`
-  * :guilabel:`Magnification`
-  * |unchecked| :guilabel:`Synchronize scale` with the main map scale.
-    A :guilabel:`Scale factor` can then be applied, allowing you to have
-    a view which is e.g. always 2x the scale of the main canvas.
-  * |checkbox| :guilabel:`Show annotations`
-  * |checkbox| :guilabel:`Show cursor position`
-  * |unchecked| :guilabel:`Show main canvas extent`
-  * |checkbox| :guilabel:`Show labels`: allows to hide labels regardless
-    they are set in the displayed layers' properties
-  * :guilabel:`Change map CRS...`
-  * :guilabel:`Rename view...`
-
-
-.. _maptimecontrol:
-
-Time-based control on the map canvas
-------------------------------------
-
-QGIS can handle temporal control on loaded layers, i.e. modify the map canvas
-rendering based on a time variation. To achieve this, you need:
-
-#. Layers that have dynamic temporal properties set.
-   QGIS supports temporal control for different data providers, with custom
-   settings.
-   It's mainly about setting the time range in which the layer would display:
-
-   * :ref:`raster layers <raster_temporal>`: controls whether to display or
-     not the layer.
-
-   .. Todo: This option might need some tweak: I think WMS-T and Postgis raster layers
-    enable more options and behaviour so, if someone can provide a better summary
-    of the temporal setting on rasters and as well describe those in raster properties,
-    it'd be very welcome!
-
-   * :ref:`vector layers <vectortemporalmenu>`: features are filtered based
-     on time values associated to their attributes
-   * :ref:`mesh layers <meshtemporal>`: displays dynamically the active dataset
-     groups values
-
-   When dynamic temporal options are enabled for a layer, an |indicatorTemporal|
-   icon is displayed next to the layer in the :guilabel:`Layers` panel to remind
-   you that the layer is temporally controlled.
-   Click the icon to update the temporal settings.
-
-#. Enable the temporal navigation of the map canvas using the :ref:`Temporal
-   controller panel <temporal_controller>`. The panel is activated:
-
-   * using the |temporal| :sup:`Temporal controller panel` icon located in the
-     :guilabel:`Map Navigation` toolbar
-   * or from the :menuselection:`View --> Panels --> Temporal controller panel`
-     menu
-
-.. _temporal_controller:
-
-The temporal controller panel
-.............................
-
-The :guilabel:`Temporal controller` panel has the following modes:
-
-.. figure:: img/temporal_controller_panel.png
-   :align: center
-
-   Temporal Controller Panel in navigation mode
-
-* |temporalNavigationOff| :sup:`Turn off temporal navigation`: all the
-  temporal settings are disabled and visible layers are rendered as usual
-* |temporalNavigationFixedRange| :sup:`Fixed range temporal navigation`:
-  a time range is set and only layers (or features) whose temporal range
-  overlaps with this range are displayed on the map.
-* |temporalNavigationAnimated| :sup:`Animated temporal navigation`:
-  a time range is set, split into steps, and only layers (or features)
-  whose temporal range overlaps with each frame are displayed on the map
-* |settings| :sup:`Settings` for general control of the animation
-
-  * :guilabel:`Frames rate`: number of steps that are shown per second
-
-  * |unchecked| :guilabel:`Cumulative range`: all animation frames will
-    have the same start date-time but different end dates and times.
-    This is useful if you wish to accumulate data in your temporal
-    visualization instead of showing a ‘moving time window’ across your data.
-
-.. _`create_temporal_animation`:
-
-Animating a temporal navigation
-...............................
-
-An animation is based on a varying set of visible layers at particular times
-within a time range.
-To create a temporal animation:
-
-#. Toggle on the |temporalNavigationAnimated| :sup:`Animated temporal
-   navigation`, displaying the animation player widget
-#. Enter the :guilabel:`Time range` to consider. Using the |refresh|
-   button, this can be defined as:
-
-   * :guilabel:`Set to full range` of all the time enabled layers
-   * :guilabel:`Set to preset project range` as defined in the :ref:`project
-     properties <project_temporal>`
-   * :guilabel:`Set to single layer's range` taken from a time-enabled layer
-#. Fill in the time :guilabel:`Step` to split the time range.
-   Different units are supported, from ``seconds`` to ``centuries``.
-   A ``source timestamps`` option is also available as step: when selected,
-   this causes the temporal navigation to step between all available time ranges
-   from layers in the project. It’s useful when a project contains layers with
-   non-contiguous available times, such as a WMS-T service which provides images
-   that are available at irregular dates. This option will allow you to only step
-   between time ranges where the next available image is shown.
-
-#. Click the |play| button to preview the animation.
-   QGIS will generate scenes using the layers rendering at the set times.
-   Layers display depends on whether they overlap any individual time frame.
-
-   .. only:: html
-
-      .. figure:: img/map_navigation.gif
-         :align: center
-
-         Temporal navigation through a layer
-
-   The animation can also be previewed by moving the time slider.
-   Keeping the |refresh| :sup:`Loop` button pressed will repeatedly run the
-   animation while clicking |play| stops a running animation.
-   A full set of video player buttons is available.
-
-   Horizontal scrolling using the mouse wheel (where supported) with the
-   cursor on the map canvas will also allow you to navigate, or “scrub”,
-   the temporal navigation slider backwards and forwards.
-
-#. Click the |fileSave| :sup:`Export animation` button if you want to generate
-   a series of images representing the scene. They can be later combined in a
-   video editor software:
-
-   .. figure:: img/saveTimeAnimation.png
-      :align: center
-
-      Exporting map canvas animation scenes to images
-
-   * The filename :guilabel:`Template`: the ``####`` are replaced with frame
-     sequence number
-   * The :guilabel:`Output directory`
-   * Under :guilabel:`Map settings`, you can:
-
-     * redefine the :ref:`spatial extent <extent_selector>` to use
-     * control the :guilabel:`Resolution` of the image
-       (:guilabel:`Output width` and :guilabel:`Output height`)
-     * :guilabel:`Draw active decorations`: whether active :ref:`decorations
-       <decorations>` should be kept in the output
-   * Under :guilabel:`Temporal settings`, you can redefine:
-
-     * the time :guilabel:`Range` for the animation
-     * the :guilabel:`Step (frame length)` in the unit of your choice
-
-
-.. _`exportingmapcanvas`:
-
-Exporting the map view
-----------------------
-
-Maps you make can be layout and exported to various formats using the
-advanced capabilities of the
-:ref:`print layout or report <label_printlayout>`.
-It's also possible to directly export the current rendering, without
-a layout.
-This quick "screenshot" of the map view has some convenient features.
-
-To export the map canvas with the current rendering:
-
-#. Go to :menuselection:`Project --> Import/Export`
-#. Depending on your output format, select either
-
-   * |saveMapAsImage| :guilabel:`Export Map to Image...`
-   * or |saveAsPDF| :guilabel:`Export Map to PDF...`
-
-The two tools provide you with a common set of options.
-In the dialog that opens:
-
-.. _figure_savemapimage:
-
-.. figure:: img/saveMapAsImage.png
-   :align: center
-
-   The Save Map as Image dialog
-
-#. Choose the :guilabel:`Extent` to export: it can be the current
-   view extent (the default), the extent of a layer or a custom extent
-   drawn over the map canvas.
-   Coordinates of the selected area are displayed and manually editable.
-#. Enter the :guilabel:`Scale` of the map or select it from the
-   :ref:`predefined scales <predefinedscales>`: changing the scale will
-   resize the extent to export (from the center).
-#. Set the :guilabel:`Resolution` of the output
-#. Control the :guilabel:`Output width` and :guilabel:`Output height`
-   in pixels of the image: based by default on the current resolution
-   and extent, they can be customized and will resize the map extent
-   (from the center).
-   The size ratio can be locked, which may be particularly convenient
-   when drawing the extent on the canvas.
-#. |checkbox| :guilabel:`Draw active decorations`: in use
-   :ref:`decorations <decorations>` (scale bar, title, grid, north
-   arrow...) are exported with the map
-#. |checkbox| :guilabel:`Draw annotations` to export any :ref:`annotation
-   <sec_annotations>`
-#. |checkbox| :guilabel:`Append georeference information (embedded or
-   via world file)`: depending on the output format, a world file of
-   the same name (with extension ``PNGW`` for ``PNG`` images, ``JPGW``
-   for ``JPG``, ...) is saved in the same folder as your image.
-   The ``PDF`` format embeds the information in the PDF file.
-#. When exporting to PDF, more options are available in the
-   :guilabel:`Save map as PDF...` dialog:
-
-   .. _figure_savemappdf:
-
-   .. figure:: img/saveMapAsPDF.png
-      :align: center
-
-      The Save Map as PDF dialog
-
-   * |checkbox| :guilabel:`Export RDF metadata` of the document such
-     as the title, author, date, description...
-   * |unchecked| :guilabel:`Create Geospatial PDF (GeoPDF)`: Generate a
-     `georeferenced PDF file <https://gdal.org/drivers/raster/pdf.html>`_.
-     You can:
-
-     * Choose the GeoPDF :guilabel:`Format`
-     * |checkbox| :guilabel:`Include vector feature information` in the
-       GeoPDF file: will include all the geometry and attribute
-       information from features visible within the map in the output
-       GeoPDF file.
-
-     .. note::
-
-       A GeoPDF file can also be used as a data source.
-       For more on GeoPDF support in QGIS, see
-       https://north-road.com/2019/09/03/qgis-3-10-loves-geopdf/.
-
-   * :guilabel:`Rasterize map`
-   * |checkbox| :guilabel:`Simplify geometries to reduce output file
-     size`:
-     Geometries will be simplified while exporting the map by removing
-     vertices that are not discernibly different at the export
-     resolution (e.g. if the export resolution is ``300 dpi``, vertices
-     that are less than ``1/600 inch`` apart will be removed).
-     This can reduce the size and complexity of the export file (very
-     large files can fail to load in other applications).
-   * Set the :guilabel:`Text export`: controls whether text labels are
-     exported as proper text objects (:guilabel:`Always export texts
-     as text objects`) or as paths only (:guilabel:`Always export texts
-     as paths`).
-     If they are exported as text objects then they can be edited in
-     external applications (e.g. Inkscape) as normal text.
-     BUT the side effect is that the rendering quality is decreased,
-     AND there are issues with rendering when certain text settings
-     like buffers are in place.
-     That’s why exporting as paths is recommended.
-
-#. Click :guilabel:`Save` to select file location, name and format.
-
-   When exporting to image, it's also possible to
-   :guilabel:`Copy to clipboard` the expected result of the above
-   settings and paste the map in another application such as
-   LibreOffice, GIMP...
-
-
-.. index:: 3D Map view
-
-.. _`label_3dmapview`:
-
-3D Map View
-===========
-
-3D visualization support is offered through the 3D map view.
-You can create, manage and open 3D map views via :menuselection:`View --> 3D Map Views -->` menu:
-
-#. By clicking on |new3DMap| :menuselection:`New 3D Map View` you can create a new 3D map view.
-   A floating and dockable QGIS panel will appear (see :ref:`figure_3dmapview`).
-   It has the same extent and view as the 2D main map canvas
-   and provides a set of navigation tools to turn the view into 3D.
-#. By clicking on :menuselection:`Manage 3D Map Views` you get in the 3D Map Views Manager. 
-   Here you get the ability to open, duplicate, remove and rename 3D map views.
-#. If you created one or more 3D map views, you see them listed in :menuselection:`3D Map Views`.
-   You can turn them on and off by clicking on. They will be saved by saving the project, even if they are turned off.  
-
-
-.. _figure_3dmapview:
-
-.. figure:: img/3dmapview.png
-   :align: center
-
-   The 3D Map View dialog
-
-The following tools are provided at the top of the 3D map view panel:
-
-* |pan| :sup:`Camera Control`: moves the view, keeping the same angle
-  and direction of the camera
-* |zoomFullExtent| :sup:`Zoom Full`: resizes the view to the whole
-  layers' extent
-* |3dNavigation| :sup:`Toggle On-Screen Notification`: shows/hides the
-  navigation widget (that is meant to ease controlling of the map view)
-* |identify| :sup:`Identify`: returns information on the clicked point
-  of the terrain or the clicked 3D feature(s) -- More details at :ref:`identify`
-* |measure| :sup:`Measurement Line`: measures the horizontal distance between points
-* |play| :sup:`Animations`: shows/hides the :ref:`animation player
-  <create_animation>` widget
-* |saveMapAsImage| :sup:`Save as Image...`: exports the current view to
-  an image file format
-* |3d| :sup:`Export 3D Scene`: exports the current view as a 3D scene
-  (:file:`.obj` file), allowing post-processing in applications like Blender...
-  The terrain and vector features are exported as 3D objects.
-  The export settings, overriding the layers :ref:`properties <sec_3_d_view>`
-  or map view :ref:`configuration <scene_configuration>`, include:
-
-  * :guilabel:`Scene name` and destination :guilabel:`Folder`
-  * :guilabel:`Terrain resolution`
-  * :guilabel:`Terrain texture resolution`
-  * :guilabel:`Model scale`
-  * |checkbox| :guilabel:`Smooth edges`
-  * |checkbox| :guilabel:`Export normals`
-  * |checkbox| :guilabel:`Export textures`
-* |showPresets| :sup:`Set View Theme`: Allows you to select the set of layers to
-  display in the map view from predefined :ref:`map themes <map_themes>`.
-* The |options| :sup:`Options` menu provides shortcuts to:
-
-  * Add visual effects to the 3D rendering, such as :guilabel:`Show shadows`,
-    :guilabel:`Show eye dome lighting`
-  * Synchronize the views (:guilabel:`2D map view follows 3D camera` and/or
-    :guilabel:`3D camera follows 2D Map view`)
-  * :guilabel:`Show visible camera area in 2D map view`
-  * |options| :sup:`Configure` the 3D map view :ref:`settings <scene_configuration>`.
-* |dock| :sup:`Dock 3D Map View`: switch from docked widget to top level window
-
-.. _`scene_configuration`:
-
-Scene Configuration
----------------------
-
-The 3D map view opens with some default settings you can customize.
-To do so, expand the |options| :sup:`Options` menu at the top of
-the 3D canvas panel and press the |options| :menuselection:`Configure` button
-to open the :guilabel:`3D configuration` window.
-
-.. _figure_3dmap_config:
-
-.. figure:: img/3dmapconfiguration.png
-   :align: center
-
-   The 3D Map Configuration dialog
-
-
-In the 3D Configuration window there are various options to
-fine-tune the 3D scene:
-
-Terrain
-.......
-
-* :guilabel:`Terrain`: Before diving into the details, it is worth
-  noting that the terrain in a 3D view is represented by a hierarchy of
-  terrain tiles and as the camera moves closer to the terrain,
-  existing tiles that do not have sufficient details are replaced by
-  smaller tiles with more details.
-  Each tile has mesh geometry derived from the elevation raster layer
-  and texture from 2D map layers.
-
-  * The elevation terrain :guilabel:`Type` can be:
-
-    * a :guilabel:`Flat terrain`
-    * a loaded :guilabel:`DEM (Raster Layer)`
-    * an :guilabel:`Online` service, loading `elevation tiles
-      <http://s3.amazonaws.com/elevation-tiles-prod/>`_
-      produced by Mapzen tools -- more details at https://registry.opendata.aws/terrain-tiles/
-    * a loaded :guilabel:`Mesh` dataset
-  * :guilabel:`Elevation`: Raster or mesh layer to be used for generation of
-    the terrain.
-    The raster layer must contain a band that represents elevation.
-    For a mesh layer, the Z values of the vertices are used.
-  * :guilabel:`Vertical scale`: Scale factor for vertical axis.
-    Increasing the scale will exaggerate the height of the landforms.
-  * :guilabel:`Tile resolution`: How many samples from the terrain
-    raster layer to use for each tile.
-    A value of 16px means that the geometry of each tile will consist
-    of 16x16 elevation samples.
-    Higher numbers create more detailed terrain tiles at the expense of
-    increased rendering complexity.
-  * :guilabel:`Skirt height`: Sometimes it is possible to see small
-    cracks between tiles of the terrain.
-    Raising this value will add vertical walls ("skirts") around terrain
-    tiles to hide the cracks.
-
-  * :guilabel:`Offset`: moves the terrain up or down, e.g. to adjust its elevation
-    with respect to the ground level of other objects in the scene.
-
-    This can be useful when there is a discrepancy between the height of the terrain
-    and the height of layers in your scene (e.g. point clouds which use a relative
-    vertical height only). In this case adjusting the terrain elevation manually to
-    coincide with the elevation of objects in your scene can improve the navigation
-    experience.
-
-* When a mesh layer is used as terrain, you can configure the
-  :guilabel:`Triangles settings` (wireframe display, smooth triangles,
-  level of detail) and the :guilabel:`Rendering colors settings` (as a uniform color
-  or :ref:`color ramp based <color_ramp_shader>`).
-  More details in the :ref:`Mesh layer 3D properties <mesh3dview>` section.
-* |unchecked| :guilabel:`Terrain shading`: Allows you to choose how the
-  terrain should be rendered:
-
-  * Shading disabled - terrain color is determined only from map texture
-  * Shading enabled - terrain color is determined using Phong's shading
-    model, taking into account map texture, the terrain normal vector,
-    scene light(s) and the terrain material's :guilabel:`Ambient` and
-    :guilabel:`Specular` colors and :guilabel:`Shininess`
-
-Lights
-......
-
-From the :guilabel:`Lights` tab, press the |symbologyAdd| menu to add
-
-* up to eight :guilabel:`Point lights`: emits light in all directions, like a
-  sphere of light filling an area. Objects closer to the light will be brighter,
-  and objects further away will be darker. A point light has a set position
-  (:guilabel:`X`, :guilabel:`Y` and :guilabel:`Z`), a :guilabel:`Color`,
-  an :guilabel:`Intensity` and an :guilabel:`Attenuation`
-* up to four :guilabel:`Directional lights`: mimics the lighting that you would
-  get from a giant flash light very far away from your objects, always centered
-  and that never dies off (e.g. the sun). It emits parallel light rays in a
-  single direction but the light reaches out into infinity.
-  A directional light can be rotated given an  :guilabel:`Azimuth`, have an
-  :guilabel:`Altitude`, a :guilabel:`Color` and an :guilabel:`Intensity`.
-
-.. _figure_3dmap_configlights:
-
-.. figure:: img/3dmapconfiguration_lights.png
-   :align: center
-
-   The 3D Map Lights Configuration dialog
-
-Shadow
-......
-
-Check |unchecked| :guilabel:`Show shadow` to display shadow within your scene,
-given:
-
-* a :guilabel:`Directional light`
-* a :guilabel:`Shadow rendering maximum distance`: to avoid rendering shadow
-  of too distant objects, particularly when the camera looks up along the
-  horizon
-* a :guilabel:`Shadow bias`: to avoid self-shadowing effects that could make
-  some areas darker than others, due to differences between map sizes.
-  The lower the better
-* a :guilabel:`Shadow map resolution`: to make shadows look sharper.
-  It may result in less performance if the resolution parameter is too high.
-
-Camera & Skybox
-...............
-
-In this tab, you can control different parameters like camera, 3D axis, navigation
-synchronization and skybox.
-
-.. _figure_3dmap_config_camera:
-
-.. figure:: img/3dmapconfiguration_camera.png
-   :align: center
-
-   The 3D Map Camera Configuration dialog
-
-* The :guilabel:`Camera` parameter group overrides some :ref:`default camera settings <3d_options>`
-  made in the :menuselection:`Settings --> Options --> 3D` dialog.
-
-* Check |unchecked| :guilabel:`Show 3D Axis` to enable 3D axis tool. This parameter
-  group allows to set the axis type and its position.
-
-  * With the :guilabel:`Coordinate Reference System` type an orthogonal axis
-    will be represented.
-  * With the :guilabel:`Cube` type, a 3D cube will be represented. The cube
-    faces can be used to change the camera view: for example, click on the
-    :guilabel:`north` face to set the camera to see from the north.
-
-.. tip:: Right-click the 3D axis to quickly set its position and type, and the camera view.
-
-  .. _figure_3dmap_config_3daxis_menu:
-
-  .. figure:: img/3dmapconfiguration_3daxis_menu.png
-     :align: center
-
-     The 3D Axis context menu
-
-* The :guilabel:`Navigation Synchronization` parameter group adds options to
-  synchronize 2D view with 3D camera position or 3D camera position with
-  2D view or bi directional synchronization. The last option displays the extent
-  visible from the 3D camera over the 2D map view.
-
-* Check |unchecked| :guilabel:`Show skybox` to enable skybox rendering
-  in the scene. The skybox type can be:
-
-  * :guilabel:`Panoramic texture`, with a single file providing sight on 360\°
-  * :guilabel:`Distinct faces`, with a texture file for each of the six sides
-    of a box containing the scene
-
-  Texture image files of the skybox can be files on the disk, remote URLs or
-  embedded in the project (:ref:`more details <embedded_file_selector>`).
-
-Advanced
-........
-
-* :guilabel:`Map tile resolution`: Width and height of the 2D map
-  images used as textures for the terrain tiles.
-  256px means that each tile will be rendered into an image of
-  256x256 pixels.
-  Higher numbers create more detailed terrain tiles at the expense of
-  increased rendering complexity.
-* :guilabel:`Max. screen error`: Determines the threshold for swapping
-  terrain tiles with more detailed ones (and vice versa) - i.e. how
-  soon the 3D view will use higher quality tiles.
-  Lower numbers mean more details in the scene at the expense of
-  increased rendering complexity.
-* :guilabel:`Max. ground error`: The resolution of the terrain tiles at
-  which dividing tiles into more detailed ones will stop (splitting
-  them would not introduce any extra detail anyway).
-  This value limits the depth of the hierarchy of tiles: lower values
-  make the hierarchy deep, increasing rendering complexity.
-* :guilabel:`Zoom levels`: Shows the number of zoom levels (depends on
-  the map tile resolution and max. ground error).
-* |unchecked| :guilabel:`Show labels`: Toggles map labels on/off
-* |unchecked| :guilabel:`Show map tile info`: Include border and tile
-  numbers for the terrain tiles (useful for troubleshooting terrain
-  issues)
-* |unchecked| :guilabel:`Show bounding boxes`: Show 3D bounding boxes
-  of the terrain tiles (useful for troubleshooting terrain issues)
-* |unchecked| :guilabel:`Show camera's view center`
-* |unchecked| :guilabel:`Show light sources`: shows a sphere at light source
-  origins, allowing easier repositioning and placement of light sources relative
-  to the scene contents
-
-.. _`3d_navigation`:
-
-Navigation options
-------------------
-
-To explore the map view in 3D:
-
-* Tilt the terrain (rotating it around a horizontal axis that
-  goes through the center of the window)
-
-  * Press the |tiltUp| :sup:`Tilt up` and |tiltDown| :sup:`Tilt down` tools
-  * Press :kbd:`Shift` and use the up/down keys
-  * Drag the mouse forward/backward with the middle mouse button pressed
-  * Press :kbd:`Shift` and drag the mouse forward/backward
-    with the left mouse button pressed
-
-* Rotate the terrain (around a vertical axis that goes through
-  the center of the window)
-
-  * Turn the compass of the navigation widget to the watching direction
-  * Press :kbd:`Shift` and use the left/right keys
-  * Drag the mouse right/left with the middle mouse button pressed
-  * Press :kbd:`Shift` and drag the mouse right/left with the
-    left mouse button pressed
-
-* Change the camera position (and the view center), moving it around
-  in a horizontal plan
-
-  * Drag the mouse with the left mouse button pressed, and the |pan|
-    :sup:`Camera control` button enabled
-  * Press the directional arrows of the navigation widget
-  * Use the up/down/left/right keys to move the
-    camera forward, backward, right and left, respectively
-
-* Change the camera altitude: press the :kbd:`Page Up`/:kbd:`Page Down` keys
-* Change the camera orientation (the camera is kept at its position but the
-  view center point moves)
-
-  * Press :kbd:`Ctrl` and use the arrow keys to turn
-    the camera up, down, left and right
-  * Press :kbd:`Ctrl` and drag the mouse with the left mouse
-    button pressed
-
-* Zoom in and out
-
-  * Press the corresponding |zoomIn| :sup:`Zoom In` and |zoomOut|
-    :sup:`Zoom Out` tools of the navigation widget
-  * Scroll the mouse wheel (keep :kbd:`Ctrl` pressed results in finer zooms)
-  * Drag the mouse with the right mouse button pressed to
-    zoom in (drag down) and out (drag up)
-
-To reset the camera view, click the |zoomFullExtent| :sup:`Zoom Full`
-button on the top of the 3D canvas panel.
-
-.. _`create_animation`:
-
-Creating an animation
----------------------
-
-An animation is based on a set of keyframes - camera positions at particular times.
-To create an animation:
-
-#. Toggle on the |play| :sup:`Animations` tool, displaying the animation player
-   widget
-#. Click the |symbologyAdd| :sup:`Add keyframe` button and enter a :guilabel:`Keyframe
-   time` in seconds. The :guilabel:`Keyframe` combo box now displays the time set.
-#. Using the navigation tools, move the camera to the position to associate with
-   the current keyframe time.
-#. Repeat the previous steps to add as many keyframes (with time and position) as necessary.
-#. Click the |play| button to preview the animation. QGIS will generate scenes using
-   the camera positions/rotations at set times, and interpolating them in between
-   these keyframes. Various :guilabel:`Interpolation` modes for animations are
-   available (eg, linear, inQuad, outQuad, inCirc... -- more details at
-   https://doc.qt.io/qt-5/qeasingcurve.html#EasingFunction-typedef).
-
-   The animation can also be previewed by moving the time slider.
-   Keeping the :guilabel:`Loop` box checked will repeatedly run the
-   animation while clicking |play| stops a running animation.
-
-Click |fileSave| :sup:`Export animation frames` to generate a series of images
-representing the scene. Other than the filename :guilabel:`Template` and the
-:guilabel:`Output directory`, you can set the number of :guilabel:`Frames per
-second`, the :guilabel:`Output width` and :guilabel:`Output height`.
-
-3D vector layers
-----------------
-
-A vector layer with elevation values can be shown in the 3D map
-view by checking :guilabel:`Enable 3D Renderer` in the
-:guilabel:`3D View` section of the vector layer properties.
-A number of options are available for controlling the rendering of
-the 3D vector layer.
 
 .. _`label_statusbar`:
 
@@ -3040,15 +2165,13 @@ processes (QGIS startup, plugins loading, processing tools...)
    please add it also to the substitutions.txt file in the
    source folder.
 
-.. |3d| image:: /static/common/3d.png
-   :width: 1.5em
-.. |3dNavigation| image:: /static/common/mAction3DNavigation.png
-   :width: 1.3em
 .. |addAllToOverview| image:: /static/common/mActionAddAllToOverview.png
    :width: 1.5em
 .. |addAmsLayer| image:: /static/common/mActionAddAmsLayer.png
    :width: 1.5em
 .. |addDelimitedTextLayer| image:: /static/common/mActionAddDelimitedTextLayer.png
+   :width: 1.5em
+.. |addGpsLayer| image:: /static/common/mActionAddGpsLayer.png
    :width: 1.5em
 .. |addGrid| image:: /static/common/add_grid.png
    :width: 1.5em
@@ -3065,6 +2188,8 @@ processes (QGIS startup, plugins loading, processing tools...)
 .. |addOracleLayer| image:: /static/common/mActionAddOracleLayer.png
    :width: 1.5em
 .. |addPart| image:: /static/common/mActionAddPart.png
+   :width: 1.5em
+.. |addPointCloudLayer| image:: /static/common/mActionAddPointCloudLayer.png
    :width: 1.5em
 .. |addPostgisLayer| image:: /static/common/mActionAddPostgisLayer.png
    :width: 1.5em
@@ -3132,8 +2257,6 @@ processes (QGIS startup, plugins loading, processing tools...)
    :width: 1.5em
 .. |deselectAll| image:: /static/common/mActionDeselectAll.png
    :width: 1.5em
-.. |dock| image:: /static/common/dock.png
-   :width: 1.5em
 .. |duplicateLayer| image:: /static/common/mActionDuplicateLayer.png
    :width: 1.5em
 .. |editCopy| image:: /static/common/mActionEditCopy.png
@@ -3173,8 +2296,6 @@ processes (QGIS startup, plugins loading, processing tools...)
    :width: 1.5em
 .. |georefRun| image:: /static/common/mGeorefRun.png
    :width: 1.5em
-.. |gpsImporter| image:: /static/common/gps_importer.png
-   :width: 1.5em
 .. |helpContents| image:: /static/common/mActionHelpContents.png
    :width: 1.5em
 .. |helpSponsors| image:: /static/common/mActionHelpSponsors.png
@@ -3191,8 +2312,6 @@ processes (QGIS startup, plugins loading, processing tools...)
    :width: 1.5em
 .. |inOverview| image:: /static/common/mActionInOverview.png
    :width: 1.5em
-.. |indicatorTemporal| image:: /static/common/mIndicatorTemporal.png
-   :width: 1.5em
 .. |interfaceCustomization| image:: /static/common/mActionInterfaceCustomization.png
    :width: 1.5em
 .. |invertSelection| image:: /static/common/mActionInvertSelection.png
@@ -3202,6 +2321,8 @@ processes (QGIS startup, plugins loading, processing tools...)
 .. |keyboardShortcuts| image:: /static/common/mActionKeyboardShortcuts.png
    :width: 1.5em
 .. |labelingSingle| image:: /static/common/labelingSingle.png
+   :width: 1.5em
+.. |layoutItem3DMap| image:: /static/common/mLayoutItem3DMap.png
    :width: 1.5em
 .. |layoutManager| image:: /static/common/mActionLayoutManager.png
    :width: 1.5em
@@ -3289,8 +2410,6 @@ processes (QGIS startup, plugins loading, processing tools...)
    :width: 1.5em
 .. |panToSelected| image:: /static/common/mActionPanToSelected.png
    :width: 1.5em
-.. |play| image:: /static/common/mActionPlay.png
-   :width: 1.5em
 .. |processSelected| image:: /static/common/mActionProcessSelected.png
    :width: 1.5em
 .. |processingAlgorithm| image:: /static/common/processingAlgorithm.png
@@ -3308,10 +2427,6 @@ processes (QGIS startup, plugins loading, processing tools...)
 .. |pythonFile| image:: /static/common/mIconPythonFile.png
    :width: 1.5em
 .. |qgisHomePage| image:: /static/common/mActionQgisHomePage.png
-   :width: 1.5em
-.. |radioButtonOff| image:: /static/common/radiobuttonoff.png
-   :width: 1.5em
-.. |radioButtonOn| image:: /static/common/radiobuttonon.png
    :width: 1.5em
 .. |rectangle3PointsDistance| image:: /static/common/mActionRectangle3PointsDistance.png
    :width: 1.5em
@@ -3363,8 +2478,6 @@ processes (QGIS startup, plugins loading, processing tools...)
    :width: 1.5em
 .. |selectRectangle| image:: /static/common/mActionSelectRectangle.png
    :width: 1.5em
-.. |settings| image:: /static/common/settings.png
-   :width: 1.5em
 .. |showAllLayers| image:: /static/common/mActionShowAllLayers.png
    :width: 1.5em
 .. |showBookmarks| image:: /static/common/mActionShowBookmarks.png
@@ -3372,8 +2485,6 @@ processes (QGIS startup, plugins loading, processing tools...)
 .. |showMeshCalculator| image:: /static/common/mActionShowMeshCalculator.png
    :width: 1.5em
 .. |showPluginManager| image:: /static/common/mActionShowPluginManager.png
-   :width: 1.5em
-.. |showPresets| image:: /static/common/mActionShowPresets.png
    :width: 1.5em
 .. |showRasterCalculator| image:: /static/common/mActionShowRasterCalculator.png
    :width: 1.5em
@@ -3393,21 +2504,7 @@ processes (QGIS startup, plugins loading, processing tools...)
    :width: 1.2em
 .. |svgAnnotation| image:: /static/common/mActionSvgAnnotation.png
    :width: 1.5em
-.. |symbologyAdd| image:: /static/common/symbologyAdd.png
-   :width: 1.5em
-.. |temporal| image:: /static/common/temporal.png
-   :width: 1.5em
-.. |temporalNavigationAnimated| image:: /static/common/mTemporalNavigationAnimated.png
-   :width: 1.5em
-.. |temporalNavigationFixedRange| image:: /static/common/mTemporalNavigationFixedRange.png
-   :width: 1.5em
-.. |temporalNavigationOff| image:: /static/common/mTemporalNavigationOff.png
-   :width: 1.5em
 .. |textAnnotation| image:: /static/common/mActionTextAnnotation.png
-   :width: 1.5em
-.. |tiltDown| image:: /static/common/mActionTiltDown.png
-   :width: 1.5em
-.. |tiltUp| image:: /static/common/mActionTiltUp.png
    :width: 1.5em
 .. |titleLabel| image:: /static/common/title_label.png
    :width: 1.5em
@@ -3421,8 +2518,6 @@ processes (QGIS startup, plugins loading, processing tools...)
    :width: 1.5em
 .. |trimExtend| image:: /static/common/mActionTrimExtend.png
    :width: 1.5em
-.. |unchecked| image:: /static/common/unchecked.png
-   :width: 1.3em
 .. |undo| image:: /static/common/mActionUndo.png
    :width: 1.5em
 .. |vertexTool| image:: /static/common/mActionVertexTool.png

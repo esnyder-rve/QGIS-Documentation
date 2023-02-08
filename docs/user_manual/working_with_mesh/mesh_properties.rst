@@ -561,16 +561,19 @@ over the map canvas.
 
 * :guilabel:`Reference time` of the dataset group, as an absolute date time.
   By default, QGIS parses the source layer and returns the first valid reference
-  time in the layer's dataset group. If unavailable, the value will be set by
-  the project time range or fall back to the current date.
+  time in the layer's dataset group.
+  If unavailable, the value will be set by the project time range
+  or fall back to the current date.
   The :guilabel:`Start time` and :guilabel:`End time` to  consider
   are then calculated based on the internal timestamp step of the dataset.
 
-  It is possible to set a custom :guilabel:`Reference time` (and then the time
-  range), and revert the changes using the |refresh| :sup:`Reload from provider`
-  button.
-* :guilabel:`Dataset matching method`: determines the dataset to display at the
-  given time. Options are :guilabel:`Find closest dataset before requested time`
+  It is possible to set a custom :guilabel:`Reference time` (and then the time range),
+  and revert the changes using the |refresh| :sup:`Reload from provider` button.
+  With |checkbox| :guilabel:`Always take reference time from data source` checked,
+  you ensure that the time properties are updated from the file
+  each time the layer is reloaded or the project reopened.
+* :guilabel:`Dataset matching method`: determines the dataset to display at the given time.
+  Options are :guilabel:`Find closest dataset before requested time`
   or :guilabel:`Find closest dataset from requested time (after or before)`.
 
 **Provider time settings**
@@ -839,16 +842,14 @@ Adding vertices
 To add vertices to a mesh layer:
 
 #. Press the |meshDigitizing| :sup:`Digitize mesh elements` button
-#. A :guilabel:`Vertex Z value` widget appears on the top right corner of
-   the map canvas. Set this value to the Z coordinate you would like to assign
-   to the subsequent vertices
+#. A :guilabel:`Vertex Z value` widget appears on the top right corner of the map canvas.
+   Set this value to the Z coordinate you would like to assign to the subsequent vertices
 #. Then double-click:
 
-   * outside a face: adds a "free vertex", that is a vertex not linked to any
-     face. This vertex is represented by a red dot when the layer is in
-     editing mode.
-   * on the edge of existing face(s): adds a vertex on the edge, splits the
-     face(s) into triangles connected to the new vertex
+   * outside a face: adds a "free vertex", that is a vertex not linked to any face.
+     This vertex is represented by a red dot when the layer is in editing mode.
+   * on the edge of existing face(s): adds a vertex on the edge,
+     splits the touching face(s) into triangles connected to the new vertex.
    * inside a face: splits the face into triangles whose edges connect
      the surrounding vertices to the new vertex.
 
@@ -858,20 +859,19 @@ Adding faces
 To add faces to a mesh layer:
 
 #. Press the |meshDigitizing| :sup:`Digitize mesh elements` button
-#. A :guilabel:`Vertex Z value` widget appears on the top right corner of
-   the map canvas. Set this value to the Z coordinate you would like to assign
-   to the subsequent vertices.
-#. Double-click to add a first vertex or move the cursor next to a vertex.
-#. Click the small triangle that appears next to the vertex and move the cursor
-   to the next vertex position; you can snap to existing vertex or double-click
-   to add a new one.
+#. A :guilabel:`Vertex Z value` widget appears on the top right corner of the map canvas.
+   Set this value to the Z coordinate you would like to assign to the subsequent vertices.
+#. Hover over a vertex and click the small triangle that appears next it.
+#. Move the cursor to the next vertex position;
+   you can snap to existing vertex or left-click to add a new one.
 #. Proceed as above to add as many vertices you wish for the face.
    Press :kbd:`Backspace` button to undo the last vertex.
 #. While moving the mouse, a rubberband showing the shape of the face is displayed.
-   If it is shown in green, then the expected face is valid and you can
-   right-click to add it to the mesh. If in red, the face is not valid
-   (e.g. because it self-intersects, overlaps an existing face or vertex, ...)
-   and can't be added. You'd need to fix the geometry.
+   If it is shown in green, then the expected face is valid
+   and you can right-click to add it to the mesh.
+   If it is red, the face is not valid (e.g. because it self-intersects,
+   overlaps an existing face or vertex, creates a hole, ...) and can't be added.
+   You'd need to undo some vertices and fix the geometry.
 #. Press :kbd:`Esc` to abort the face digitizing.
 #. Right-click to validate the face.
 
@@ -904,12 +904,10 @@ To move vertices and faces of a mesh layer:
 #. :ref:`Select the target elements <select_mesh_elements>`
 #. Enable the |meshDigitizing| :sup:`Digitize mesh elements` tool
 #. To start moving the element, click on a vertex or the centroid of a face/edge
-#. Move the cursor to the target location (snapping to vector features is
-   supported).
-#. If the new location does not generate an invalid mesh, the moved elements
-   appear in green. Click again to release them at this location.
-   Faces whose vertices are all selected are translated, their neighbors are
-   reshaped accordingly.
+#. Move the cursor to the target location (snapping to vector features is supported).
+#. If the new location does not generate an invalid mesh, the moved elements appear in green.
+   Click again to release them at this location.
+   Faces whose vertices are all selected are translated, their neighbors are reshaped accordingly.
 
 .. _transform_meshvertices:
 

@@ -965,6 +965,35 @@ Selector <color-selector>` dialog. You can also rename it by double-clicking
 in the :guilabel:`Label` column.
 
 
+.. index:: Fonts
+.. _fonts_options:
+
+Fonts Settings
+--------------
+
+.. _figure_fonts_options:
+
+.. figure:: img/options_fonts.png
+   :align: center
+
+   Fonts settings
+
+The :guilabel:`Fonts` tab provides support to manage fonts used across the projects:
+
+* :guilabel:`Font Replacements`: gives ability to populate a list of automatic font replacements to apply when loading projects or styles,
+  allowing better support for projects and styles to be used across different operating systems (e.g. replace "Arial" with "Helvetica").
+* :guilabel:`User Fonts`: Allows you to place TTF or OTF fonts in the :file:`fonts` sub-folder of the :ref:`user profile <user_profiles>`.
+  These fonts can be automatically loaded at QGIS startup time.
+  This provides a way to use fonts without requiring them to be installed on an operating system level,
+  which is often blocked in enterprise environments.
+  The panel lists all installed user fonts and allows you to manage (i.e. remove) previously installed user fonts.
+
+  It is also possible to |checkbox| :guilabel:`Automatically download missing, freely-licensed fonts`:
+  E.g. if you open a project or style, or try to load a vector tile layer that references fonts that aren’t currently available,
+  then a hard-coded list of freely licensed fonts to download via URL is consulted to determine whether
+  it’s possible to automatically download the font to the user profile font directory (with notification of the font license).
+
+
 .. _layout_options:
 
 Layouts settings
@@ -985,14 +1014,14 @@ You can define the :guilabel:`Default font` used within the :ref:`print layout
 
 **Grid appearance**
 
-* Define the :guilabel:`Grid style` |selectString| ('Solid', 'Dots', 'Crosses')
+* Define the :guilabel:`Grid style` ('Solid', 'Dots', 'Crosses')
 * Define the :guilabel:`Grid color`
 
 **Grid and guide defaults**
 
-* Define the :guilabel:`Grid spacing` |selectNumber|
-* Define the :guilabel:`Grid offset` |selectNumber| for X and Y
-* Define the :guilabel:`Snap tolerance` |selectNumber|
+* Define the :guilabel:`Grid spacing`
+* Define the :guilabel:`Grid offset` for X and Y
+* Define the :guilabel:`Snap tolerance`
 
 
 **Layout Paths**
@@ -1111,11 +1140,13 @@ https://doc.qt.io/archives/qt-5.9/qnetworkproxy.html#ProxyType-enum
    Using proxies can sometimes be tricky. It is useful to proceed by 'trial and
    error' with the above proxy types, to check if they succeed in your case.
 
-.. index:: Search widget, Locator
-.. _locator_options:
+.. index:: GPS
+.. _gps_options:
 
 GPS settings
 ------------
+
+.. _defining_new_device:
 
 GPSBabel
 ........
@@ -1123,23 +1154,48 @@ GPSBabel
 `GPSBabel <https://www.gpsbabel.org/>`_ converts waypoints, tracks, and routes between popular GPS receivers 
 such as Garmin or Magellan and mapping programs like Google Earth or Basecamp. 
 Literally hundreds of GPS receivers and programs are supported.
-First you have to define the :guilabel:`Path to GPSBabel` binaries
-Then you have to choose or to add a device. You can add and delete device paths via
-|symbologyAdd| :guilabel:`Add new path` or |symbologyRemove| :guilabel:`Remove path`.
-After that you can define different parameters:
+QGIS relies on GPSBabel to interact with these devices
+and :ref:`manipulate their data <gps_algorithms>`.
+
+#. First you have to define the :guilabel:`Path to GPSBabel` binaries.
+#. Then you may want to add your device.
+   You can update devices list using |symbologyAdd| :sup:`Add new device`
+   or |symbologyRemove| :sup:`Remove device` button.
+#. For each device:
+
+   * you provide a :guilabel:`Device name`
+   * you configure different :guilabel:`Commands` QGIS will use while interacting with it,
+     such as:
+
+     * :guilabel:`Waypoint download` from the device
+     * :guilabel:`Waypoint upload` to the device
+     * :guilabel:`Route download` from the device
+     * :guilabel:`Route upload` to the device
+     * :guilabel:`Track download` from the device
+     * :guilabel:`Track upload` to the device
+
+     While the commands are usually GPSBabel commands, you can also use any other command line program that can create a GPX file.
+     QGIS will replace the keywords ``%type``, ``%in``, and ``%out`` when it runs the command.
+
+     As an example, if you create a device type with the download command
+     ``gpsbabel %type -i garmin -o gpx %in %out``
+     and then use it to download waypoints from port ``/dev/ttyS0`` to the file ``output.gpx``,
+     QGIS will replace the keywords and run the command
+     ``gpsbabel -w -i garmin -o gpx /dev/ttyS0 output.gpx``.
+
+     Read the GPSBabel manual for the command line options that may be specific to your use case.
+
+Once you have created a new device type, it will appear in the device lists for
+the GPS download and upload algorithms.
 
 .. figure:: img/options_gpsbabel.png
    :align: center
 
    GPS Babel settings
 
-* Define :guilabel:`Waypoint download`
-* Define :guilabel:`Waypoint upload`
-* Define :guilabel:`Route download`
-* Define :guilabel:`Route upload`
-* Define :guilabel:`Track download`
-* Define :guilabel:`Track upload`
 
+.. index:: Search widget, Locator
+.. _locator_options:
 
 Locator settings
 ----------------

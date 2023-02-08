@@ -450,17 +450,9 @@ Advanced parameters
 
        Options:
 
-       * 0 --- Byte
-       * 1 --- Int16
-       * 2 --- UInt16
-       * 3 --- UInt32
-       * 4 --- Int32
-       * 5 --- Float32
-       * 6 --- Float64
-       * 7 --- CInt16
-       * 8 --- CInt32
-       * 9 --- CFloat32
-       * 10 --- CFloat64
+       .. include:: ../algs_include.rst
+          :start-after: **raster_data_types**
+          :end-before: **end_raster_data_types**
 
    * - **Pre-initialize the output image with value**
 
@@ -478,6 +470,14 @@ Advanced parameters
      - Burns the fixed burn value, or the burn value associated
        with the first feature into all parts of the image not
        inside the provided polygon.
+   *  - **Additional command-line parameters**
+
+        Optional
+      - ``EXTRA``
+      - [string]
+
+        Default: ''
+      - Add extra GDAL command line options
 
 Outputs
 .......
