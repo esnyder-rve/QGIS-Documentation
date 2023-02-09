@@ -13,3 +13,4 @@ This group of providers does blah, blah, blah
    native_combinestyles
    native_categorizeusingstyle
    native_stylefromproject
+   native_atlaslayouttoimage
