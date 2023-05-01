@@ -11,8 +11,17 @@ calculated rotation field to rotate marker symbols.
 If desired, a maximum distance to use when aligning points can be set,
 to avoid aligning isolated points to distant features.
 
+.. figure:: img/angletonearest_detail.png
+    :align: center
+    :figwidth: image
+
+    The above image shows an SVG symbol at it's default rotation (facing up).
+    The rotation value produced by this algorithm will make the symbol's top face the referenced layer feature.
+    The symbol rotation data-defined override expression produced by this tool may need to be changed if this is
+    not the desired behavior.
+
 .. hint:: This algorithm is designed for use cases like aligning building
- point symbols to follow the nearest road direction.
+   point symbols to follow the nearest road direction. See example 1 for details.
 
 |checkbox| Allows :ref:`features in-place modification <processing_inplace_edit>`
 of point features
@@ -73,7 +82,20 @@ Aligned layer : [vector: point]
 Examples
 --------
 
-**Todo**
+**Example 1: Aligning house symbols to roads**
+
+.. figure:: img/angletonearest_example01_before.png
+    :scale: 50 %
+
+    A point layer symbolized with a house svg symbol that we want to rotate
+    to face the roads (line layer).
+
+.. figure:: img/angletonearest_example01_after.png
+    :scale: 50%
+
+    The rotated symbols will at first have the house peaks facing the roads,
+    but modifying the symbol expression by adding 180 to the symbol rotation
+    field value will flip the houses to now face the roads.
 
 Python code
 -----------
@@ -81,14 +103,14 @@ Python code
 **Algorithm ID**: ``native:angletonearest``
 
 .. code-block:: python
-
-   import processing
-   parameters = {
-      'INPUT': mySourceLayer,
-      'REFERENCE_LAYER': myRefLayer,
-      'FIELD_NAME': 'symbol_rotation',
-      'APPLY_SYMBOLOGY': True}
-   processing.run("native:angletonearest", parameters)
+    
+    import processing
+    parameters = {
+    'INPUT': mySourceLayer,
+    'REFERENCE_LAYER': myRefLayer,
+    'FIELD_NAME': 'symbol_rotation',
+    'APPLY_SYMBOLOGY': True}
+    processing.run("native:angletonearest", parameters)
 
 .. Substitutions definitions - AVOID EDITING PAST THIS LINE
    This will be automatically updated by the find_set_subst.py script.
