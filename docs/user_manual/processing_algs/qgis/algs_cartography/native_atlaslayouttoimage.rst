@@ -1,3 +1,5 @@
+.. _qgisatlaslayouttoimage:
+
 Export atlas layout as image
 ============================
 Exports the atlas of a print layout as image files (e.g. PNG or JPEG images).

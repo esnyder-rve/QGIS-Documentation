@@ -1,3 +1,5 @@
+.. _qgiscategorizeusingstyle:
+
 Create categorized renderer from styles
 =======================================
 Sets a vector layer's renderer to a categorized renderer using matching symbols

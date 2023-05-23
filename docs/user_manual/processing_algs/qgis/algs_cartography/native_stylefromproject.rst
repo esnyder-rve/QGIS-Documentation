@@ -1,3 +1,5 @@
+.. _qgisstylefromproject:
+
 Create style database from project
 ========================================
 Extracts all style objects (symbols, color ramps, text formats and

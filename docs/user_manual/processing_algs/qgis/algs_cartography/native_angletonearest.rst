@@ -1,3 +1,5 @@
+.. _qgisangletonearest:
+
 Align points to features
 ========================
 

@@ -1,6 +1,7 @@
+.. _qgiscombinestyles:
+
 Combine style databases
 =======================================
-
 Combines multiple QGIS style databases into a single style database.
 If items of the same type with the same name exist in different source
 databases these will be renamed to have unique names in the output combined database.
