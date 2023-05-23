@@ -6,12 +6,6 @@ Cartography
     .. toctree::
       :maxdepth: 2
 
-.. _qgisstylefromproject:
-
-.. _qgisatlaslayouttoimage:
-
-
-
 .. _qgisatlaslayouttomultiplepdf:
 
 Export atlas layout as PDF (multiple files)
