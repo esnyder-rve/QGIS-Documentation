@@ -4,7 +4,7 @@
 QGIS Cartography Algorithms
 ***************************
 
-This group of providers does blah, blah, blah
+This group of contains tools designed to work with styles and symbology, aid in cartographic representation of data, and work with map layouts.
 
 .. toctree::
    :maxdepth: 1
